@@ -3,3 +3,4 @@ select movie_id,
     COALESCE(genre,'Unknown' ) as genre,
     COALESCE(studio,'Unknown') as studio
 from {{ source('SILVERSCREEN', 'movies') }}
+
