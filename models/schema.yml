@@ -29,6 +29,7 @@ models:
       - name: movie_title
         description: Title of the movie
       - name: genre
+      
         description: Genre of the movie
       - name: studio
         description: Production studio of the movie
