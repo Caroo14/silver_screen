@@ -1,4 +1,5 @@
 {{ config(materialized='table') }}
+
 select
     m.movie_id,
     m.movie_title,
