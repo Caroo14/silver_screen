@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: SILVERSCREEN
+    description: 5 tables showing cost and revenue for cinema 
+    database: SILVER_SCREEN
+    schema: Public
+    tables: 
+      - name: invoices
+        description: monthly rental cost per movie id
+        columns:
+          - name: invoice_id
+            tests:
+              - not_null
+              - unique
+      - name: movies
+        description: movie detail per movie id
+        columns:
+          - name: movie_id
+            tests:
+              - not_null
+              - unique
+      - name: nj_001
+        description: transaction for cinema 1
+      - name: nj_002
+        description: transaction for cinama 2
+      - name: nj_003
+        description: transacion for cinema 3
